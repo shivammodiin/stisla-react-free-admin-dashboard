@@ -10,7 +10,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 // eslint-disable-next-line no-undef
 import { BrowserRouter, HashRouter } from "react-router-dom";
-// import "summernote/dist/summernote-bs4.css";
+import "summernote/dist/summernote-bs4.css";
 // Template
 import "./assets/css/components.css";
 
@@ -25,6 +25,7 @@ import * as serviceWorker from "./serviceWorker";
 window.jQuery = jQuery;
 window.$ = jQuery;
 
+// require("sweetalert2/dist/sweetalert.min.js");
 require("inputmask/dist/inputmask/jquery.inputmask");
 require("inputmask/dist/inputmask/inputmask.date.extensions");
 require("inputmask/dist/inputmask/inputmask.extensions");
@@ -70,7 +71,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <App />
-    </React.StrictMode>{" "}
+    </React.StrictMode>
   </BrowserRouter>,
   document.getElementById("root")
 );

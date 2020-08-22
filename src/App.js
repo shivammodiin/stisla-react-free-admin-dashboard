@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import { Switch, Route, Link } from "react-router-dom";
 import { Header, Footer, Sidebar } from "./components/admin";
 import EcommerceDashboard from "./pages/Dashboard/EcommerceDashboard";
 import GeneralDashboard from "./pages/Dashboard/GeneralDashboard";
@@ -43,7 +43,7 @@ import GeoCoding from "./pages/Google Maps/GeoCoding";
 import GeoLocation from "./pages/Google Maps/GeoLocation";
 import Marker from "./pages/Google Maps/Marker";
 import MultipleMarker from "./pages/Google Maps/MultipleMarker";
-import Route from "./pages/Google Maps/Route";
+import GRoute from "./pages/Google Maps/Route";
 import Simple from "./pages/Google Maps/Simple";
 import FormValidation from "./pages/Forms/FormValidation";
 import FormEditor from "./pages/Forms/FormEditor";
@@ -82,8 +82,96 @@ function App() {
     <div className="App">
       <Header />
       <Sidebar />
+      <Switch>
+        <Route path="/dashboard/ecommerce" component={EcommerceDashboard} />
+        <Route path="/dashboard/general" component={GeneralDashboard} />
+        <Route path="/layout/default" component={DefaultLayoutPage} />
+        <Route path="/bootstrap/alert" component={BootstrapAlert} />
+        <Route path="/bootstrap/badge" component={BootstrapBadge} />
+        <Route path="/bootstrap/breadcrumb" component={BootstrapBreadcrumb} />
+        <Route path="/bootstrap/button" component={BootstrapButtons} />
+        <Route path="/bootstrap/card" component={BootstrapCard} />
+        <Route path="/bootstrap/carousel" component={BootstrapCarousel} />
+        <Route path="/bootstrap/collapse" component={BootstrapCollapse} />
+        <Route path="/bootstrap/dropdown" component={BootstrapDropDown} />
+        <Route path="/bootstrap/form" component={BootstrapForm} />
+        <Route path="/bootstrap/list-group" component={BootstrapListGroup} />
+        <Route
+          path="/bootstrap/media-object"
+          component={BootstrapMediaObject}
+        />
+        <Route path="/bootstrap/modal" component={BootstrapModal} />
+        <Route path="/bootstrap/nav" component={BootstrapNav} />
+        <Route path="/bootstrap/navbar" component={BootstrapNavbar} />
+        <Route path="/bootstrap/pagination" component={BootstrapPagination} />
+        <Route path="/bootstrap/popover" component={BootstrapPopover} />
+        <Route path="/bootstrap/Progress" component={BootstrapProgress} />
+        <Route path="/bootstrap/table" component={BootstrapTable} />
+        <Route path="/bootstrap/tooltip" component={BootstrapTooltip} />
+        <Route path="/bootstrap/typography" component={BootstrapTypography} />
+        <Route path="/component/article" component={CompArticle} />
+        <Route path="/component/avatar" component={CompAvatar} />
+        <Route path="/component/chat-box" component={CompChatbox} />
+        <Route path="/component/empty-state" component={CompEmptystate} />
+        <Route path="/component/gallery" component={CompGallery} />
+        <Route path="/component/hero" component={CompHero} />
+        <Route
+          path="/component/multiple-upload"
+          component={CompMultipleupload}
+        />
+        <Route path="/component/pricing" component={CompPricing} />
+        <Route path="/component/statistic" component={CompStatics} />
+        <Route path="/component/tab" component={CompTab} />
+        <Route path="/component/table" component={CompTable} />
+        <Route path="/component/user" component={CompUser} />
+        <Route path="/component/wizard" component={CompWizard} />
+        <Route path="/form/advance-form" component={FormAdvancedform} />
+        <Route path="/form/editor" component={FormEditor} />
 
-      <Calender />
+        <Route path="/form/validation" component={FormValidation} />
+        <Route path="/google-maps/advance-route" component={AdvancedRoute} />
+        <Route
+          path="/google-maps/draggable-marker"
+          component={DraggableMarker}
+        />
+        <Route path="/google-maps/geocoding" component={GeoCoding} />
+        <Route path="/google-maps/geolocation" component={GeoLocation} />
+        <Route path="/google-maps/marker" component={Marker} />
+        <Route path="/google-maps/multiple-marker" component={MultipleMarker} />
+        <Route path="/google-maps/route" component={GRoute} />
+        <Route path="/google-maps/simple" component={Simple} />
+        <Route path="/module/calendar" component={Calender} />
+        <Route path="/module/chartjs" component={Chart} />
+        <Route path="/module/datatables" component={DataTables} />
+        <Route path="/module/flag" component={Flag} />
+        <Route path="/module/font-awesome" component={FontAwesome} />
+        <Route path="/module/ion-icons" component={IonIcons} />
+        <Route path="/module/owl-carousel" component={OwlCarousel} />
+        <Route path="/module/sparkline" component={Sparkline} />
+        <Route path="/module/sweet-alert-2" component={SweetAlert} />
+        <Route path="/module/toastr" component={Toastr} />
+        <Route path="/module/vector-map" component={VectorMap} />
+        <Route path="/module/weather-icons" component={WeatherIcon} />
+        <Route path="/feature/activities" component={Activities} />
+        <Route path="/feature/post-create" component={PostCreate} />
+        <Route path="/feature/posts" component={Posts} />
+        <Route path="/feature/profile" component={Profile} />
+        <Route path="/feature/Settings" component={Settings} />
+        <Route path="/feature/setting-detail" component={SettingDetail} />
+        <Route path="/feature/tickets" component={Tickets} />
+        <Route path="/credit" component={Credit} />
+      </Switch>
+      {/* < />
+            < />
+            < />
+            < />
+            < /> */}
+      {/* <Route path="/feature/" component={} />
+        <Route path="/feature/" component={} />
+        <Route path="/feature/" component={} />
+        <Route path="/feature/" component={} />
+        <Route path="/feature/" component={} /> */}
+      {/* <Calender />
       <Chart />
       <DataTables />
       <Flag />
@@ -94,82 +182,76 @@ function App() {
       <SweetAlert />
       <Toastr />
       <VectorMap />
-      <WeatherIcon />
-
+      <WeatherIcon /> */}
       {/* 
-      <ForgotPassword />
-      <Login />
-      <Register />
-      <ResetPassword />
-      <Credit />
-      <Error403 />
-      <Error404 />
-      <Error500 />
-      <Error503 />
-      <Activities />
-      <PostCreate />
-      <Posts />
-      <Profile />
-      <SettingDetail />
-      <Settings />
-      <Tickets /> */}
-
+            <ForgotPassword />
+            <Login />
+            <Register />
+            <ResetPassword />
+            <Credit />
+            <Error403 />
+            <Error404 />
+            <Error500 />
+            <Error503 />
+            <Activities />
+            <PostCreate />
+            <Posts />
+            <Profile />
+            <SettingDetail />
+            <Settings />
+            <Tickets /> */}
       {/* <AdvancedRoute />
-      <DraggableMarker />
-      <GeoCoding />
-      <GeoLocation />
-      <Marker />
-      <MultipleMarker />
-      <Route />
-      <Simple />
-      <FormValidation />
-      <FormEditor />
-      <FormAdvancedform /> */}
-
+            <DraggableMarker />
+            <GeoCoding />
+            <GeoLocation />
+            <Marker />
+            <MultipleMarker />
+            <GRoute />
+            <Simple />
+            <FormValidation />
+            <FormEditor />
+            <FormAdvancedform /> */}
       {/* <CompArticle />
-      <CompAvatar />
-      <CompChatbox />
-      <CompChatbox />
-      <CompEmptystate />
-      <CompGallery />
-      <CompHero />
-      <CompMultipleupload />
-      <CompPricing />
-      <CompStatics />
-      <CompTab />
-      <CompTable />
-      <CompUser />
-      <CompWizard /> */}
-
+            <CompAvatar />
+            <CompChatbox />
+            <CompChatbox />
+            <CompEmptystate />
+            <CompGallery />
+            <CompHero />
+            <CompMultipleupload />
+            <CompPricing />
+            <CompStatics />
+            <CompTab />
+            <CompTable />
+            <CompUser />
+            <CompWizard /> */}
       {/* 
 
-      
-      <BootstrapAlert />
-      <BootstrapBadge />
-      <BootstrapBreadcrumb />
+            
+            <BootstrapAlert />
+            <BootstrapBadge />
+            <BootstrapBreadcrumb />
 
-      <BootstrapButtons />
-      <BootstrapCard />
+            <BootstrapButtons />
+            <BootstrapCard />
 
-      <BootstrapCarousel />
-      <BootstrapCollapse />
-      <BootstrapDropDown />
-      <BootstrapForm />
-      <BootstrapListGroup />
-      <BootstrapMediaObject />
-      <BootstrapModal />
-      <BootstrapNav />
-      <BootstrapNavbar />
-      <BootstrapPagination />
-      <BootstrapPopover />
-      <BootstrapProgress />
-      <BootstrapTable />
-      <BootstrapTooltip />
-      <BootstrapTypography /> */}
-
-      {/* <DefaultLayoutPage /> */}
-      {/* <GeneralDashboard /> */}
-      {/* <EcommerceDashboard /> */}
+            <BootstrapCarousel />
+            <BootstrapCollapse />
+            <BootstrapDropDown />
+            <BootstrapForm />
+            <BootstrapListGroup />
+            <BootstrapMediaObject />
+            <BootstrapModal />
+            <BootstrapNav />
+            <BootstrapNavbar />
+            <BootstrapPagination />
+            <BootstrapPopover />
+            <BootstrapProgress />
+            <BootstrapTable />
+            <BootstrapTooltip />
+            <BootstrapTypography /> */}
+      {/* <DefaultLayoutPage /> */} {/* <GeneralDashboard /> */}{" "}
+      {/* <EcommerceDashboard /> */}{" "}
     </div>
   );
 }

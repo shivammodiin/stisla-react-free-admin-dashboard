@@ -127,59 +127,59 @@ export const Data = {
             icon: 'fas fa-th-large',
             children: [{
                     name: 'Article',
-                    url: '/stisla/article'
+                    url: '/component/article'
                 },
                 {
                     name: 'Avatar',
-                    url: '/stisla/avatar',
+                    url: '/component/avatar',
                     beep: true
                 },
                 {
                     name: 'Chat Box',
-                    url: '/stisla/chat-box'
+                    url: '/component/chat-box'
                 },
                 {
                     name: 'Empty State',
-                    url: '/stisla/empty-state',
+                    url: '/component/empty-state',
                     beep: true
                 },
                 {
                     name: 'Gallery',
-                    url: '/stisla/gallery'
+                    url: '/component/gallery'
                 },
                 {
                     name: 'Hero',
-                    url: '/stisla/hero',
+                    url: '/component/hero',
                     beep: true
                 },
                 {
                     name: 'Multiple Upload',
-                    url: '/stisla/multiple-upload',
+                    url: '/component/multiple-upload',
                     beep: true
                 },
                 {
                     name: 'Pricing',
-                    url: '/stisla/pricing'
+                    url: '/component/pricing'
                 },
                 {
                     name: 'Statistic',
-                    url: '/stisla/statistic'
+                    url: '/component/statistic'
                 },
                 {
                     name: 'tab',
-                    url: '/stisla/tab'
+                    url: '/component/tab'
                 },
                 {
                     name: 'Table',
-                    url: '/stisla/table'
+                    url: '/component/table'
                 },
                 {
                     name: 'User',
-                    url: '/stisla/user'
+                    url: '/component/user'
                 },
                 {
                     name: 'Wizard',
-                    url: '/stisla/wizard',
+                    url: '/component/wizard',
                     beep: true
                 }
             ]
@@ -369,12 +369,12 @@ export const Data = {
                 },
                 {
                     name: 'Post Create',
-                    url: '/feature/post-reate',
+                    url: '/feature/post-create',
                     active: false
                 },
                 {
-                    name: 'Post',
-                    url: '/feature/post',
+                    name: 'Posts',
+                    url: '/feature/posts',
                     active: false
                 },
                 {
@@ -420,6 +420,13 @@ export const Data = {
                     active: false
                 }
             ]
+        },
+        {
+            dropdown: false,
+            active: false,
+            name: 'Credits',
+            icon: 'fas fa-pencil-ruler',
+            url: '/credit',
         }
     ]
 };
