@@ -1,8 +1,5 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-unused-expressions */
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Data } from "./data";
 
 const SideBar = () => {
@@ -39,36 +36,68 @@ const SideBar = () => {
                           if (submenu.beep) {
                             subComp = (
                               <li key={iSubmenu} className="active">
-                                <Link
+                                <NavLink
+                                  activeStyle={{
+                                    color: "#6777ef",
+                                    borderBottom: "solid 3px #6777ef",
+                                    marginLeft: "1em",
+                                  }}
+                                  exact
                                   className="beep beep-sidebar"
                                   to={submenu.url}
                                 >
                                   {submenu.name}
-                                </Link>
+                                </NavLink>
                               </li>
                             );
                           } else {
                             subComp = (
-                              <li key={iSubmenu} className="active">
-                                <Link to={submenu.url}>{submenu.name}</Link>
+                              <li key={iSubmenu}>
+                                <NavLink
+                                  activeStyle={{
+                                    color: "#6777ef",
+                                    borderBottom: "solid 3px #6777ef",
+                                    marginLeft: "1em",
+                                  }}
+                                  exact
+                                  to={submenu.url}
+                                >
+                                  {submenu.name}
+                                </NavLink>
                               </li>
                             );
                           }
                         } else if (submenu.beep) {
                           subComp = (
                             <li key={iSubmenu}>
-                              <Link
+                              <NavLink
+                                activeStyle={{
+                                  color: "#6777ef",
+                                  borderBottom: "solid 3px #6777ef",
+                                  marginLeft: "1em",
+                                }}
+                                exact
                                 className="beep beep-sidebar"
                                 to={submenu.url}
                               >
                                 {submenu.name}
-                              </Link>
+                              </NavLink>
                             </li>
                           );
                         } else {
                           subComp = (
                             <li key={iSubmenu}>
-                              <Link to={submenu.url}>{submenu.name}</Link>
+                              <NavLink
+                                activeStyle={{
+                                  color: "#6777ef",
+                                  borderBottom: "solid 3px #6777ef",
+                                  marginLeft: "1em",
+                                }}
+                                exact
+                                to={submenu.url}
+                              >
+                                {submenu.name}
+                              </NavLink>
                             </li>
                           );
                         }
@@ -92,36 +121,68 @@ const SideBar = () => {
                           if (submenu.beep) {
                             subComp = (
                               <li key={iSubmenu} className="active">
-                                <Link
+                                <NavLink
+                                  activeStyle={{
+                                    color: "#6777ef",
+                                    borderBottom: "solid 3px #6777ef",
+                                    marginLeft: "1em",
+                                  }}
+                                  exact
                                   className="beep beep-sidebar"
                                   to={submenu.url}
                                 >
                                   {submenu.name}
-                                </Link>
+                                </NavLink>
                               </li>
                             );
                           } else {
                             subComp = (
                               <li key={iSubmenu} className="active">
-                                <Link to={submenu.url}>{submenu.name}</Link>
+                                <NavLink
+                                  activeStyle={{
+                                    color: "#6777ef",
+                                    borderBottom: "solid 3px #6777ef",
+                                    marginLeft: "1em",
+                                  }}
+                                  exact
+                                  to={submenu.url}
+                                >
+                                  {submenu.name}
+                                </NavLink>
                               </li>
                             );
                           }
                         } else if (submenu.beep) {
                           subComp = (
                             <li key={iSubmenu}>
-                              <Link
+                              <NavLink
+                                activeStyle={{
+                                  color: "#6777ef",
+                                  borderBottom: "solid 3px #6777ef",
+                                  marginLeft: "1em",
+                                }}
+                                exact
                                 className="beep beep-sidebar"
                                 to={submenu.url}
                               >
                                 {submenu.name}
-                              </Link>
+                              </NavLink>
                             </li>
                           );
                         } else {
                           subComp = (
                             <li key={iSubmenu}>
-                              <Link to={submenu.url}>{submenu.name}</Link>
+                              <NavLink
+                                activeStyle={{
+                                  color: "#6777ef",
+                                  borderBottom: "solid 3px #6777ef",
+                                  marginLeft: "1em",
+                                }}
+                                exact
+                                to={submenu.url}
+                              >
+                                {submenu.name}
+                              </NavLink>
                             </li>
                           );
                         }
@@ -133,21 +194,39 @@ const SideBar = () => {
                 );
               }
             } else if (menu.active) {
+              //
               comp = (
-                <li key={iMenu} className="active">
-                  <Link to={menu.url}>
+                <li key={iMenu} className="s">
+                  <NavLink
+                    activeStyle={{
+                      color: "#6777ef",
+                      borderBottom: "solid 3px #6777ef",
+                      marginLeft: "1em",
+                    }}
+                    exact
+                    to={menu.url}
+                  >
                     <i className={menu.icon} />
                     <span>{menu.name}</span>
-                  </Link>
+                  </NavLink>
                 </li>
               );
             } else {
+              //Single Component
               comp = (
                 <li key={iMenu}>
-                  <Link to={menu.url}>
+                  <NavLink
+                    activeStyle={{
+                      color: "#6777ef",
+                      borderBottom: "solid 3px #6777ef",
+                      marginLeft: "1em",
+                    }}
+                    exact
+                    to={menu.url}
+                  >
                     <i className={menu.icon} />
                     <span>{menu.name}</span>
-                  </Link>
+                  </NavLink>
                 </li>
               );
             }
