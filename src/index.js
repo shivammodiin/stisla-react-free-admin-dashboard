@@ -9,7 +9,10 @@ import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 // eslint-disable-next-line no-undef
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter
+} from "react-router-dom";
 import "summernote/dist/summernote-bs4.css";
 // Template
 import "./assets/css/components.css";
@@ -21,7 +24,7 @@ import "ionicons201/css/ionicons.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@mdi/font/css/materialdesignicons.min.css";
 import * as serviceWorker from "./serviceWorker";
-
+import 'flag-icon-css/css/flag-icon.css'
 window.jQuery = jQuery;
 window.$ = jQuery;
 
@@ -69,12 +72,15 @@ require("owl.carousel/dist/owl.carousel.min");
 require("summernote/dist/summernote-bs4");
 require("chocolat/dist/js/jquery.chocolat.min");
 
-ReactDOM.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>{" "}
-  </BrowserRouter>,
+ReactDOM.render( <
+  BrowserRouter >
+  <
+  React.StrictMode >
+  <
+  App / >
+  <
+  /React.StrictMode>{" "} <
+  /BrowserRouter>,
   document.getElementById("root")
 );
 

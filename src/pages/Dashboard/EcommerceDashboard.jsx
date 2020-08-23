@@ -514,10 +514,11 @@ export class EcommerceDashboard extends Component {
                         <li className="media">
                           <img
                             className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/id.svg"
+                            src={require("../../../node_modules/flag-icon-css/flags/4x3/id.svg")}
                             alt="image"
                             width="40"
                           />
+
                           <div className="media-body ml-3">
                             <div className="media-title">Indonesia</div>
                             <div className="text-small text-muted">
