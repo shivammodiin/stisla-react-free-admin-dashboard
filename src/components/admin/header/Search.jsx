@@ -6,7 +6,7 @@ export class Search extends Component {
     if (obj.id === 1) {
       comp = obj.children.map((data, idata) => {
         return (
-          <div key={idata} className="search-item">
+          <div key={`${idata}${obj.id}`} className="search-item">
             <a href="#">{data.title}</a>
             <a href="#" className="search-close">
               <i className="fas fa-times" />
@@ -17,7 +17,7 @@ export class Search extends Component {
     } else if (obj.id === 2) {
       comp = obj.children.map((data, idata) => {
         return (
-          <div key={idata} className="search-item">
+          <div key={`${idata}${obj.id}`} className="search-item">
             <a href="#">
               <img
                 className="mr-3 rounded"
@@ -33,7 +33,7 @@ export class Search extends Component {
     } else if (obj.id === 3) {
       comp = obj.children.map((data, idata) => {
         return (
-          <div key={idata} className="search-item">
+          <div key={`${idata}${obj.id}`} className="search-item">
             <a href="#">
               <div className={`search-icon ${data.backCls} text-white mr-3`}>
                 <i className={data.icode} />
@@ -70,13 +70,13 @@ export class Search extends Component {
               let comp;
 
               comp = (
-                <>
+                <React.Fragment key={icontent}>
                   <div key={icontent} className="search-header">
                     {content.headerTitle}
                   </div>
 
                   {this.searchResults(content)}
-                </>
+                </React.Fragment>
               );
 
               return comp;

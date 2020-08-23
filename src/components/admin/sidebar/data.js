@@ -10,7 +10,7 @@ export const Data = {
             icon: 'fas fa-fire',
             children: [{
                     name: 'Ecommerce Dashboard',
-                    url: '/dashboard/ecommerce',
+                    url: '/',
                     active: true
                 },
                 {

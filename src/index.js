@@ -4,8 +4,8 @@ import App from "./App";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import * as jQuery from "jquery";
 import "jqvmap/dist/jqvmap.min.css";
-// import "owl.carousel/dist/assets/owl.carousel.min.css";
-// import "owl.carousel/dist/assets/owl.theme.default.min.css";
+import "owl.carousel/dist/assets/owl.carousel.min.css";
+import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 // eslint-disable-next-line no-undef
@@ -56,11 +56,13 @@ require("datatables.net-select-bs4");
 
 window.swal = require("sweetalert2");
 window.moment = require("moment");
+// window.Chart = require("chart.js/dist/Chart.min");
+window.Chart = require("chart.js");
+//
 
 // JS Libraies
 require("jquery-sparkline/jquery.sparkline.min");
 require("simpleweather/jquery.simpleWeather.min");
-require("chart.js/dist/Chart.min");
 require("jqvmap/dist/jquery.vmap.min");
 require("jqvmap/dist/maps/jquery.vmap.world");
 require("owl.carousel/dist/owl.carousel.min");
@@ -71,7 +73,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>{" "}
   </BrowserRouter>,
   document.getElementById("root")
 );

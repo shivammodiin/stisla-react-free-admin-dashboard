@@ -28,6 +28,7 @@ export class UserDropdown extends Component {
           {userDetail.datas.map((data, idata) => {
             return (
               <NavLink
+                key={idata}
                 to={data.link}
                 activeStyle={{
                   color: "#6777ef",
