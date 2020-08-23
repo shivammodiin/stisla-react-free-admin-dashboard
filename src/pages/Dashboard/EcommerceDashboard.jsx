@@ -12,6 +12,24 @@ export class EcommerceDashboard extends Component {
         })
         .niceScroll();
     }
+    $("#products-carousel").owlCarousel({
+      items: 3,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      loop: true,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        768: {
+          items: 2,
+        },
+        1200: {
+          items: 3,
+        },
+      },
+    });
   }
   render() {
     return (
@@ -394,89 +412,92 @@ export class EcommerceDashboard extends Component {
                   <h4>Best Products</h4>
                 </div>
                 <div className="card-body">
-                  {/* <div className="owl-carousel owl-theme" id="products-carousel"> */}
-                  <div>
-                    <div className="product-item pb-3">
-                      <div className="product-image">
-                        <img
-                          alt="image"
-                          src="../assets/img/products/product-4-50.png"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="product-details">
-                        <div className="product-name">iBook Pro 2018</div>
-                        <div className="product-review">
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
+                  <div
+                    className="owl-carousel owl-theme"
+                    id="products-carousel"
+                  >
+                    <div>
+                      <div className="product-item pb-3">
+                        <div className="product-image">
+                          <img
+                            alt="image"
+                            src="../assets/img/products/product-4-50.png"
+                            className="img-fluid"
+                          />
                         </div>
-                        <div className="text-muted text-small">67 Sales</div>
-                        <div className="product-cta">
-                          <a href="#" className="btn btn-primary">
-                            Detail
-                          </a>
+                        <div className="product-details">
+                          <div className="product-name">iBook Pro 2018</div>
+                          <div className="product-review">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                          </div>
+                          <div className="text-muted text-small">67 Sales</div>
+                          <div className="product-cta">
+                            <a href="#" className="btn btn-primary">
+                              Detail
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="product-item">
+                        <div className="product-image">
+                          <img
+                            alt="image"
+                            src="../assets/img/products/product-3-50.png"
+                            className="img-fluid"
+                          />
+                        </div>
+                        <div className="product-details">
+                          <div className="product-name">oPhone S9 Limited</div>
+                          <div className="product-review">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half"></i>
+                          </div>
+                          <div className="text-muted text-small">86 Sales</div>
+                          <div className="product-cta">
+                            <a href="#" className="btn btn-primary">
+                              Detail
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="product-item">
+                        <div className="product-image">
+                          <img
+                            alt="image"
+                            src="../assets/img/products/product-1-50.png"
+                            className="img-fluid"
+                          />
+                        </div>
+                        <div className="product-details">
+                          <div className="product-name">Headphone Blitz</div>
+                          <div className="product-review">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="far fa-star"></i>
+                          </div>
+                          <div className="text-muted text-small">63 Sales</div>
+                          <div className="product-cta">
+                            <a href="#" className="btn btn-primary">
+                              Detail
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="product-item">
-                      <div className="product-image">
-                        <img
-                          alt="image"
-                          src="../assets/img/products/product-3-50.png"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="product-details">
-                        <div className="product-name">oPhone S9 Limited</div>
-                        <div className="product-review">
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star-half"></i>
-                        </div>
-                        <div className="text-muted text-small">86 Sales</div>
-                        <div className="product-cta">
-                          <a href="#" className="btn btn-primary">
-                            Detail
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="product-item">
-                      <div className="product-image">
-                        <img
-                          alt="image"
-                          src="../assets/img/products/product-1-50.png"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="product-details">
-                        <div className="product-name">Headphone Blitz</div>
-                        <div className="product-review">
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="fas fa-star"></i>
-                          <i className="far fa-star"></i>
-                        </div>
-                        <div className="text-muted text-small">63 Sales</div>
-                        <div className="product-cta">
-                          <a href="#" className="btn btn-primary">
-                            Detail
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* </div> */}
                 </div>
               </div>
             </div>
