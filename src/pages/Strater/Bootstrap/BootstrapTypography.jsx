@@ -166,7 +166,7 @@ export default function BootstrapTypography() {
                   <blockquote>Stisla made with hand</blockquote>
                   <div class="section-title">Inline Code</div>
                   <p>
-                    Lorem ipsum dolor sit amet, <code>consectetur</code>{" "}
+                    Lorem ipsum dolor sit amet, <code>consectetur</code>
                     adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis
                     nostrud <code>exercitation</code> ullamco laboris nisi ut

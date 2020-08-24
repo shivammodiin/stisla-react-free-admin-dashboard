@@ -2,36 +2,36 @@ import React from "react";
 
 export default function BootstrapTable() {
   return (
-    <div class="main-content">
-      <section class="section">
-        <div class="section-header">
+    <div className="main-content">
+      <section className="section">
+        <div className="section-header">
           <h1>Table</h1>
-          <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active">
+          <div className="section-header-breadcrumb">
+            <div className="breadcrumb-item active">
               <a href="#">Dashboard</a>
             </div>
-            <div class="breadcrumb-item">
+            <div className="breadcrumb-item">
               <a href="#">Bootstrap Components</a>
             </div>
-            <div class="breadcrumb-item">Table</div>
+            <div className="breadcrumb-item">Table</div>
           </div>
         </div>
 
-        <div class="section-body">
-          <h2 class="section-title">Tables</h2>
-          <p class="section-lead">
+        <div className="section-body">
+          <h2 className="section-title">Tables</h2>
+          <p className="section-lead">
             Examples for opt-in styling of tables (given their prevalent use in
             JavaScript plugins) with Bootstrap.
           </p>
 
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="card">
-                <div class="card-header">
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-6">
+              <div className="card">
+                <div className="card-header">
                   <h4>Simple</h4>
                 </div>
-                <div class="card-body">
-                  <table class="table">
+                <div className="card-body">
+                  <table className="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -63,12 +63,12 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>FIt</h4>
                 </div>
-                <div class="card-body p-0">
-                  <table class="table">
+                <div className="card-body p-0">
+                  <table className="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -100,14 +100,14 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Table Head Options</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table">
-                    <thead class="thead-dark">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table">
+                    <thead className="thead-dark">
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">First</th>
@@ -136,9 +136,9 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table">
-                    <thead class="thead-light">
+                  <div className="section-title">Dark</div>
+                  <table className="table">
+                    <thead className="thead-light">
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">First</th>
@@ -169,13 +169,13 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Borderless</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table table-borderless">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table table-borderless">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -205,8 +205,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table table-borderless table-dark">
+                  <div className="section-title">Dark</div>
+                  <table className="table table-borderless table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -238,13 +238,13 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Hover</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table table-hover">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -274,8 +274,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table table-hover table-dark">
+                  <div className="section-title">Dark</div>
+                  <table className="table table-hover table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -308,13 +308,13 @@ export default function BootstrapTable() {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="card">
-                <div class="card-header">
+            <div className="col-12 col-md-6 col-lg-6">
+              <div className="card">
+                <div className="card-header">
                   <h4>Invert</h4>
                 </div>
-                <div class="card-body">
-                  <table class="table table-dark">
+                <div className="card-body">
+                  <table className="table table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -346,13 +346,13 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Striped</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table table-striped">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table table-striped">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -382,8 +382,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table table-striped table-dark">
+                  <div className="section-title">Dark</div>
+                  <table className="table table-striped table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -415,13 +415,13 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Bordered</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table table-bordered">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table table-bordered">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -451,8 +451,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table table-bordered table-dark">
+                  <div className="section-title">Dark</div>
+                  <table className="table table-bordered table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -484,13 +484,13 @@ export default function BootstrapTable() {
                   </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header">
+              <div className="card">
+                <div className="card-header">
                   <h4>Small Table, Caption &amp; Responsive</h4>
                 </div>
-                <div class="card-body">
-                  <div class="section-title mt-0">Light</div>
-                  <table class="table table-sm">
+                <div className="card-body">
+                  <div className="section-title mt-0">Light</div>
+                  <table className="table table-sm">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -520,8 +520,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Dark</div>
-                  <table class="table table-sm table-dark">
+                  <div className="section-title">Dark</div>
+                  <table className="table table-sm table-dark">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -551,8 +551,8 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Caption</div>
-                  <table class="table">
+                  <div className="section-title">Caption</div>
+                  <table className="table">
                     <caption>List of users</caption>
                     <thead>
                       <tr>
@@ -583,9 +583,9 @@ export default function BootstrapTable() {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="section-title">Responsive</div>
-                  <div class="table-responsive">
-                    <table class="table table-sm">
+                  <div className="section-title">Responsive</div>
+                  <div className="table-responsive">
+                    <table className="table table-sm">
                       <thead>
                         <tr>
                           <th scope="col">#</th>

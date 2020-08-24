@@ -25,10 +25,30 @@ export const Data = {
             name: 'Starter'
         },
         {
-            name: 'Default Layout',
+            dropdown: true,
+
+            name: 'Layout',
             icon: 'fas fa-columns',
-            url: '/layout/default',
-            active: false
+            children: [{
+                    name: 'Default Layout',
+                    url: '/layout/default'
+                }, {
+                    name: 'Transparent Sidebar',
+                    url: '/layout/transparent-sidebar'
+
+                }, {
+
+                    name: 'Top Navigation',
+                    url: '/layout/top-navigation'
+                }
+
+            ]
+        },
+        {
+            name: 'Blank Page',
+            icon: 'far fa-square',
+            url: "/blank"
+
         },
         {
             dropdown: true,

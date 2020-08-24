@@ -160,6 +160,7 @@ function App() {
         <Route path="/feature/tickets" component={Tickets} />{" "}
         <Route path="/credit" component={Credit} />{" "}
       </Switch>{" "}
+      <Footer />
       {/* < />
                   < />
                   < />

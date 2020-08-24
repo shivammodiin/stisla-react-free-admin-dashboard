@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import { ChartShow } from "./ChartShow";
+import { ChartShow } from "./ChartShow/ChartShow";
+import FlagEcom from "./Flag/FlagEcom";
+import { flagData } from "./Data";
+import { Link, NavLink } from "react-router-dom";
 
 export class EcommerceDashboard extends Component {
   componentDidMount() {
@@ -508,107 +511,7 @@ export class EcommerceDashboard extends Component {
                 </div>
                 <div className="card-body">
                   <div className="row">
-                    <div className="col-sm-6">
-                      <div className="text-title mb-2">July</div>
-                      <ul className="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src={require("../../../node_modules/flag-icon-css/flags/4x3/id.svg")}
-                            alt="image"
-                            width="40"
-                          />
-
-                          <div className="media-body ml-3">
-                            <div className="media-title">Indonesia</div>
-                            <div className="text-small text-muted">
-                              3,282{" "}
-                              <i className="fas fa-caret-down text-danger"></i>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/my.svg"
-                            alt="image"
-                            width="40"
-                          />
-                          <div className="media-body ml-3">
-                            <div className="media-title">Malaysia</div>
-                            <div className="text-small text-muted">
-                              2,976{" "}
-                              <i className="fas fa-caret-down text-danger"></i>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/us.svg"
-                            alt="image"
-                            width="40"
-                          />
-                          <div className="media-body ml-3">
-                            <div className="media-title">United States</div>
-                            <div className="text-small text-muted">
-                              1,576{" "}
-                              <i className="fas fa-caret-up text-success"></i>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-sm-6 mt-sm-0 mt-4">
-                      <div className="text-title mb-2">August</div>
-                      <ul className="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/id.svg"
-                            alt="image"
-                            width="40"
-                          />
-                          <div className="media-body ml-3">
-                            <div className="media-title">Indonesia</div>
-                            <div className="text-small text-muted">
-                              3,486{" "}
-                              <i className="fas fa-caret-up text-success"></i>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/ps.svg"
-                            alt="image"
-                            width="40"
-                          />
-                          <div className="media-body ml-3">
-                            <div className="media-title">Palestine</div>
-                            <div className="text-small text-muted">
-                              3,182{" "}
-                              <i className="fas fa-caret-up text-success"></i>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="media">
-                          <img
-                            className="img-fluid mt-1 img-shadow"
-                            src="../node_modules/flag-icon-css/flags/4x3/de.svg"
-                            alt="image"
-                            width="40"
-                          />
-                          <div className="media-body ml-3">
-                            <div className="media-title">Germany</div>
-                            <div className="text-small text-muted">
-                              2,317{" "}
-                              <i className="fas fa-caret-down text-danger"></i>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                    <FlagEcom data={flagData} />
                   </div>
                 </div>
               </div>
@@ -758,12 +661,18 @@ export class EcommerceDashboard extends Component {
                         <div>6 hours ago</div>
                       </div>
                     </a>
-                    <a
-                      href="features-tickets.html"
+                    <NavLink
+                      activeStyle={{
+                        color: "#6777ef",
+                        borderBottom: "solid 3px #6777ef",
+                        marginLeft: "1em",
+                      }}
+                      exact
+                      to="feature/tickets"
                       className="ticket-item ticket-more"
                     >
                       View All <i className="fas fa-chevron-right"></i>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>

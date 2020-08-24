@@ -1,16 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Data } from "./data";
+import { useLocation } from "react-router-dom";
 
-const SideBar = () => {
+const SideBar = ({ props }) => {
+  const location = useLocation().pathname;
+
+  console.log(location);
   return (
     <div className="main-sidebar">
       <aside id="sidebar-wrapper">
         <div className="sidebar-brand">
-          <a href="index.html">Stisla</a>
+          <Link to="/"> Stisla </Link>
         </div>
         <div className="sidebar-brand sidebar-brand-sm">
-          <a href="index.html">St</a>
+          <Link to="/"> St </Link>
         </div>
         <ul className="sidebar-menu mb-5">
           {Data.menus.map((menu, iMenu) => {
@@ -26,8 +30,7 @@ const SideBar = () => {
                 comp = (
                   <li key={iMenu} className="nav-item dropdown active">
                     <a href="#" className="nav-link has-dropdown">
-                      <i className={menu.icon} />
-                      <span>{menu.name}</span>
+                      <i className={menu.icon} /> <span> {menu.name} </span>
                     </a>
                     <ul className="dropdown-menu">
                       {menu.children.map((submenu, iSubmenu) => {
@@ -38,9 +41,8 @@ const SideBar = () => {
                               <li key={iSubmenu} className="active">
                                 <NavLink
                                   activeStyle={{
-                                    color: "#6777ef",
-                                    borderBottom: "solid 3px #6777ef",
-                                    marginLeft: "1em",
+                                    color: " #6777ef",
+                                    fontWeight: "600",
                                   }}
                                   exact
                                   className="beep beep-sidebar"
@@ -55,9 +57,8 @@ const SideBar = () => {
                               <li key={iSubmenu}>
                                 <NavLink
                                   activeStyle={{
-                                    color: "#6777ef",
-                                    borderBottom: "solid 3px #6777ef",
-                                    marginLeft: "1em",
+                                    color: " #6777ef",
+                                    fontWeight: "600",
                                   }}
                                   exact
                                   to={submenu.url}
@@ -72,9 +73,8 @@ const SideBar = () => {
                             <li key={iSubmenu}>
                               <NavLink
                                 activeStyle={{
-                                  color: "#6777ef",
-                                  borderBottom: "solid 3px #6777ef",
-                                  marginLeft: "1em",
+                                  color: " #6777ef",
+                                  fontWeight: "600",
                                 }}
                                 exact
                                 className="beep beep-sidebar"
@@ -89,9 +89,8 @@ const SideBar = () => {
                             <li key={iSubmenu}>
                               <NavLink
                                 activeStyle={{
-                                  color: "#6777ef",
-                                  borderBottom: "solid 3px #6777ef",
-                                  marginLeft: "1em",
+                                  color: " #6777ef",
+                                  fontWeight: "600",
                                 }}
                                 exact
                                 to={submenu.url}
@@ -111,8 +110,7 @@ const SideBar = () => {
                 comp = (
                   <li key={iMenu} className="nav-item dropdown">
                     <a href="#" className="nav-link has-dropdown">
-                      <i className={menu.icon} />
-                      <span>{menu.name}</span>
+                      <i className={menu.icon} /> <span> {menu.name} </span>
                     </a>
                     <ul className="dropdown-menu">
                       {menu.children.map((submenu, iSubmenu) => {
@@ -123,9 +121,8 @@ const SideBar = () => {
                               <li key={iSubmenu} className="active">
                                 <NavLink
                                   activeStyle={{
-                                    color: "#6777ef",
-                                    borderBottom: "solid 3px #6777ef",
-                                    marginLeft: "1em",
+                                    color: " #6777ef",
+                                    fontWeight: "600",
                                   }}
                                   exact
                                   className="beep beep-sidebar"
@@ -140,9 +137,8 @@ const SideBar = () => {
                               <li key={iSubmenu} className="active">
                                 <NavLink
                                   activeStyle={{
-                                    color: "#6777ef",
-                                    borderBottom: "solid 3px #6777ef",
-                                    marginLeft: "1em",
+                                    color: " #6777ef",
+                                    fontWeight: "600",
                                   }}
                                   exact
                                   to={submenu.url}
@@ -157,9 +153,8 @@ const SideBar = () => {
                             <li key={iSubmenu}>
                               <NavLink
                                 activeStyle={{
-                                  color: "#6777ef",
-                                  borderBottom: "solid 3px #6777ef",
-                                  marginLeft: "1em",
+                                  color: " #6777ef",
+                                  fontWeight: "600",
                                 }}
                                 exact
                                 className="beep beep-sidebar"
@@ -174,9 +169,8 @@ const SideBar = () => {
                             <li key={iSubmenu}>
                               <NavLink
                                 activeStyle={{
-                                  color: "#6777ef",
-                                  borderBottom: "solid 3px #6777ef",
-                                  marginLeft: "1em",
+                                  color: " #6777ef",
+                                  fontWeight: "600",
                                 }}
                                 exact
                                 to={submenu.url}
@@ -199,15 +193,13 @@ const SideBar = () => {
                 <li key={iMenu} className="s">
                   <NavLink
                     activeStyle={{
-                      color: "#6777ef",
-                      borderBottom: "solid 3px #6777ef",
-                      marginLeft: "1em",
+                      color: " #6777ef",
+                      fontWeight: "600",
                     }}
                     exact
                     to={menu.url}
                   >
-                    <i className={menu.icon} />
-                    <span>{menu.name}</span>
+                    <i className={menu.icon} /> <span> {menu.name} </span>
                   </NavLink>
                 </li>
               );
@@ -217,15 +209,13 @@ const SideBar = () => {
                 <li key={iMenu}>
                   <NavLink
                     activeStyle={{
-                      color: "#6777ef",
-                      borderBottom: "solid 3px #6777ef",
-                      marginLeft: "1em",
+                      color: " #6777ef",
+                      fontWeight: "600",
                     }}
                     exact
                     to={menu.url}
                   >
-                    <i className={menu.icon} />
-                    <span>{menu.name}</span>
+                    <i className={menu.icon} /> <span> {menu.name} </span>
                   </NavLink>
                 </li>
               );
