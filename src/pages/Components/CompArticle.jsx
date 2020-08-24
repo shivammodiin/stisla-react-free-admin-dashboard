@@ -1,6 +1,15 @@
 import React, { Component } from "react";
+import $ from "jquery";
 
 export class CompArticle extends Component {
+  componentDidMount() {
+    $("[data-background]").each(function() {
+      var me = $(this);
+      me.css({
+        backgroundImage: "url(" + me.data("background") + ")",
+      });
+    });
+  }
   render() {
     return (
       <div class="main-content">
@@ -30,7 +39,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img08.jpg"
+                      data-background="../../assets/img/news/img08.jpg"
                     ></div>
                     <div class="article-title">
                       <h2>
@@ -58,7 +67,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img04.jpg"
+                      data-background="../../assets/img/news/img04.jpg"
                     ></div>
                     <div class="article-title">
                       <h2>
@@ -86,7 +95,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img09.jpg"
+                      data-background="../../assets/img/news/img09.jpg"
                     ></div>
                     <div class="article-title">
                       <h2>
@@ -114,7 +123,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img12.jpg"
+                      data-background="../../assets/img/news/img12.jpg"
                     ></div>
                     <div class="article-title">
                       <h2>
@@ -146,7 +155,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img13.jpg"
+                      data-background="../../assets/img/news/img13.jpg"
                     ></div>
                     <div class="article-badge">
                       <div class="article-badge-item bg-danger">
@@ -179,7 +188,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img15.jpg"
+                      data-background="../../assets/img/news/img15.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -207,7 +216,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img07.jpg"
+                      data-background="../../assets/img/news/img07.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -235,7 +244,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img02.jpg"
+                      data-background="../../assets/img/news/img02.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -266,7 +275,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img13.jpg"
+                      data-background="../../assets/img/news/img13.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -288,7 +297,7 @@ export class CompArticle extends Component {
                     <div class="article-user">
                       <img
                         alt="image"
-                        src="../assets/img/avatar/avatar-1.png"
+                        src="../../assets/img/avatar/avatar-1.png"
                       />
                       <div class="article-user-details">
                         <div class="user-detail-name">
@@ -305,7 +314,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img14.jpg"
+                      data-background="../../assets/img/news/img14.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -327,7 +336,7 @@ export class CompArticle extends Component {
                     <div class="article-user">
                       <img
                         alt="image"
-                        src="../assets/img/avatar/avatar-3.png"
+                        src="../../assets/img/avatar/avatar-3.png"
                       />
                       <div class="article-user-details">
                         <div class="user-detail-name">
@@ -344,7 +353,7 @@ export class CompArticle extends Component {
                   <div class="article-header">
                     <div
                       class="article-image"
-                      data-background="../assets/img/news/img01.jpg"
+                      data-background="../../assets/img/news/img01.jpg"
                     ></div>
                   </div>
                   <div class="article-details">
@@ -366,7 +375,7 @@ export class CompArticle extends Component {
                     <div class="article-user">
                       <img
                         alt="image"
-                        src="../assets/img/avatar/avatar-2.png"
+                        src="../../assets/img/avatar/avatar-2.png"
                       />
                       <div class="article-user-details">
                         <div class="user-detail-name">

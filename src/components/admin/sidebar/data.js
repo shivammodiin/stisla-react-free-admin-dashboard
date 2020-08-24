@@ -186,7 +186,7 @@ export const Data = {
                     url: '/component/statistic'
                 },
                 {
-                    name: 'tab',
+                    name: 'Tab',
                     url: '/component/tab'
                 },
                 {

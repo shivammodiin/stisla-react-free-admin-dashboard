@@ -7,30 +7,47 @@ import App from "./App";
 
 // // Template JS File
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import * as jQuery from "jquery";
 import "jqvmap/dist/jqvmap.min.css";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
+import "dropzone/dist/min/dropzone.min.css";
+
 import "./assets/css/style.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 import "summernote/dist/summernote-bs4.css";
 // Template
 
 // import "./index.css";
-// import "bootstrap-social/bootstrap-social.css";
+import "bootstrap-social/bootstrap-social.css";
 import "chocolat/dist/css/chocolat.css";
 
 import "ionicons201/css/ionicons.min.css";
-import "@fortawesome/fontawesome-free/css/all.css";
+import "selectric/public/selectric.css";
+
 import "@mdi/font/css/materialdesignicons.min.css";
 import * as serviceWorker from "./serviceWorker";
 import "flag-icon-css/css/flag-icon.css";
 import "./assets/css/components.css";
+// import "bootstrap-timepicker/css/bootstrap-timepicker.min.css"
 
 window.jQuery = jQuery;
 window.$ = jQuery;
-
 // require("sweetalert2/dist/sweetalert.min.js");
+require("bootstrap-timepicker/css/bootstrap-timepicker.min.css");
+require("bootstrap-timepicker/js/bootstrap-timepicker.js");
+require("bootstrap-daterangepicker/daterangepicker.js");
+require("bootstrap-daterangepicker/daterangepicker.css");
+require("bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css");
+require("bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js");
+require("bootstrap-timepicker/js/bootstrap-timepicker.js");
+require("codemirror/lib/codemirror.css");
+require("codemirror/theme/duotone-dark.css");
+require("codemirror/lib/codemirror.js");
+require("codemirror/mode/javascript/javascript.js");
+
 require("inputmask/dist/inputmask/jquery.inputmask");
 require("inputmask/dist/inputmask/inputmask.date.extensions");
 require("inputmask/dist/inputmask/inputmask.extensions");
@@ -39,12 +56,14 @@ require("jquery.nicescroll/dist/jquery.nicescroll.min");
 require("select2/dist/js/select2.full");
 require("bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min");
 require("bootstrap-tagsinput/dist/bootstrap-tagsinput");
+// require("jquery_upload_preview/assets/js/jquery.uploadPreview.min.js");
 require("bootstrap-daterangepicker/daterangepicker");
 require("bootstrap-timepicker/js/bootstrap-timepicker.min");
 require("bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min");
 require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min");
 require("bootstrap/dist/js/bootstrap.min");
 require("bootstrap-select/dist/js/bootstrap-select");
+require("selectric/public/jquery.selectric.min.js");
 
 window.JSZip = require("jszip");
 require("datatables.net-bs4");
@@ -62,6 +81,7 @@ require("prismjs/themes/prism.css");
 
 window.swal = require("sweetalert2");
 window.moment = require("moment");
+
 // window.Chart = require("chart.js/dist/Chart.min");
 window.Chart = require("chart.js");
 //
@@ -73,8 +93,11 @@ require("jqvmap/dist/maps/jquery.vmap.world");
 require("owl.carousel/dist/owl.carousel.min");
 require("summernote/dist/summernote-bs4");
 require("prismjs/prism.js");
-
+require("dropzone/dist/min/dropzone.min.js");
 require("chocolat/dist/js/jquery.chocolat.min.js");
+require("bootstrap-daterangepicker/daterangepicker.js");
+require("bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js");
+require("bootstrap-timepicker/js/bootstrap-timepicker.min.js");
 
 ReactDOM.render(
   <BrowserRouter>

@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
+import UserScroll from "../../js/UserScroll";
+import ProgressHeightWidth from "../../js/ProgressHeightWidth";
+
 export class CompUser extends Component {
+  componentDidMount() {
+    ProgressHeightWidth();
+    UserScroll();
+  }
   render() {
     return (
       <div class="main-content">

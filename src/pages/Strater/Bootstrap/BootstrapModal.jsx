@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BootstrapModaljs } from "./js/BootstrapModal";
+import { BootstrapModaljs } from "../../../js/BootstrapModal";
 
 export class BootstrapModal extends Component {
   componentDidMount() {

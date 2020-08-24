@@ -1,281 +1,291 @@
 import React, { Component } from "react";
+import AdvanceForm from "../../js/FormAdvanced";
 
 export class FormAdvancedform extends Component {
+  componentDidMount() {
+    AdvanceForm();
+  }
   render() {
     return (
-      <div class="main-content">
-        <section class="section">
-          <div class="section-header">
+      <div className="main-content">
+        <section className="section">
+          <div className="section-header">
             <h1>Advanced Forms</h1>
-            <div class="section-header-breadcrumb">
-              <div class="breadcrumb-item active">
+            <div className="section-header-breadcrumb">
+              <div className="breadcrumb-item active">
                 <a href="#">Dashboard</a>
               </div>
-              <div class="breadcrumb-item">
+              <div className="breadcrumb-item">
                 <a href="#">Forms</a>
               </div>
-              <div class="breadcrumb-item">Advanced Forms</div>
+              <div className="breadcrumb-item">Advanced Forms</div>
             </div>
           </div>
 
-          <div class="section-body">
-            <h2 class="section-title">Advanced Forms</h2>
-            <p class="section-lead">
+          <div className="section-body">
+            <h2 className="section-title">Advanced Forms</h2>
+            <p className="section-lead">
               We provide advanced input fields, such as date picker, color
               picker, and so on.
             </p>
 
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
+            <div className="row">
+              <div className="col-12 col-md-6 col-lg-6">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Input Text</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
+                  <div className="card-body">
+                    <div className="form-group">
                       <label>Default Input Text</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" className="form-control" />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Phone Number (US Format)</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fas fa-phone"></i>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">
+                            <i className="fas fa-phone"></i>
                           </div>
                         </div>
-                        <input type="text" class="form-control phone-number" />
+                        <input
+                          type="text"
+                          className="form-control phone-number"
+                        />
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Password Strength</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fas fa-lock"></i>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">
+                            <i className="fas fa-lock"></i>
                           </div>
                         </div>
                         <input
                           type="password"
-                          class="form-control pwstrength"
+                          className="form-control pwstrength"
                           data-indicator="pwindicator"
                         />
                       </div>
-                      <div id="pwindicator" class="pwindicator">
-                        <div class="bar"></div>
-                        <div class="label"></div>
+                      <div id="pwindicator" className="pwindicator">
+                        <div className="bar"></div>
+                        <div className="label"></div>
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Currency</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">$</div>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">$</div>
                         </div>
-                        <input type="text" class="form-control currency" />
+                        <input type="text" className="form-control currency" />
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Purchase Code</label>
                       <input
                         type="text"
-                        class="form-control purchase-code"
+                        className="form-control purchase-code"
                         placeholder="ASDF-GHIJ-KLMN-OPQR"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Invoice</label>
-                      <input type="text" class="form-control invoice-input" />
+                      <input
+                        type="text"
+                        className="form-control invoice-input"
+                      />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Date</label>
                       <input
                         type="text"
-                        class="form-control datemask"
+                        className="form-control datemask"
                         placeholder="YYYY/MM/DD"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Credit Card</label>
-                      <input type="text" class="form-control creditcard" />
+                      <input type="text" className="form-control creditcard" />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Tags</label>
-                      <input type="text" class="form-control inputtags" />
+                      <input type="text" className="form-control inputtags" />
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Toggle Switches</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <div class="control-label">Toggle switches</div>
-                      <div class="custom-switches-stacked mt-2">
-                        <label class="custom-switch">
+                  <div className="card-body">
+                    <div className="form-group">
+                      <div className="control-label">Toggle switches</div>
+                      <div className="custom-switches-stacked mt-2">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="1"
-                            class="custom-switch-input"
-                            checked
+                            className="custom-switch-input"
+                            defaultChecked
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 1
                           </span>
                         </label>
-                        <label class="custom-switch">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="2"
-                            class="custom-switch-input"
+                            className="custom-switch-input"
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 2
                           </span>
                         </label>
-                        <label class="custom-switch">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="3"
-                            class="custom-switch-input"
+                            className="custom-switch-input"
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 3
                           </span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="control-label">Toggle switch single</div>
-                      <label class="custom-switch mt-2">
+                    <div className="form-group">
+                      <div className="control-label">Toggle switch single</div>
+                      <label className="custom-switch mt-2">
                         <input
                           type="checkbox"
                           name="custom-switch-checkbox"
-                          class="custom-switch-input"
+                          className="custom-switch-input"
                         />
-                        <span class="custom-switch-indicator"></span>
-                        <span class="custom-switch-description">
+                        <span className="custom-switch-indicator"></span>
+                        <span className="custom-switch-description">
                           I agree with terms and conditions
                         </span>
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Image Check</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label class="form-label">Image Check</label>
-                      <div class="row gutters-sm">
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                  <div className="card-body">
+                    <div className="form-group">
+                      <label className="form-label">Image Check</label>
+                      <div className="row gutters-sm">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="1"
-                              class="imagecheck-input"
+                              className="imagecheck-input"
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img01.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
                         </div>
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="2"
-                              class="imagecheck-input"
-                              checked
+                              className="imagecheck-input"
+                              defaultChecked
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img02.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
                         </div>
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="3"
-                              class="imagecheck-input"
+                              className="imagecheck-input"
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img03.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
                         </div>
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="4"
-                              class="imagecheck-input"
-                              checked
+                              className="imagecheck-input"
+                              defaultChecked
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img04.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
                         </div>
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="5"
-                              class="imagecheck-input"
+                              className="imagecheck-input"
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img05.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
                         </div>
-                        <div class="col-6 col-sm-4">
-                          <label class="imagecheck mb-4">
+                        <div className="col-6 col-sm-4">
+                          <label className="imagecheck mb-4">
                             <input
                               name="imagecheck"
                               type="checkbox"
                               value="6"
-                              class="imagecheck-input"
+                              className="imagecheck-input"
                             />
-                            <figure class="imagecheck-figure">
+                            <figure className="imagecheck-figure">
                               <img
                                 src="../assets/img/news/img06.jpg"
                                 alt="}"
-                                class="imagecheck-image"
+                                className="imagecheck-image"
                               />
                             </figure>
                           </label>
@@ -284,96 +294,96 @@ export class FormAdvancedform extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Color</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
+                  <div className="card-body">
+                    <div className="form-group">
                       <label>Simple</label>
                       <input
                         type="text"
-                        class="form-control colorpickerinput"
+                        className="form-control colorpickerinput"
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Pick Your Color</label>
-                      <div class="input-group colorpickerinput">
-                        <input type="text" class="form-control" />
-                        <div class="input-group-append">
-                          <div class="input-group-text">
-                            <i class="fas fa-fill-drip"></i>
+                      <div className="input-group colorpickerinput">
+                        <input type="text" className="form-control" />
+                        <div className="input-group-append">
+                          <div className="input-group-text">
+                            <i className="fas fa-fill-drip"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Color Input</label>
-                      <div class="row gutters-xs">
-                        <div class="col-auto">
-                          <label class="colorinput">
+                    <div className="form-group">
+                      <label className="form-label">Color Input</label>
+                      <div className="row gutters-xs">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="primary"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-primary"></span>
+                            <span className="colorinput-color bg-primary"></span>
                           </label>
                         </div>
-                        <div class="col-auto">
-                          <label class="colorinput">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="secondary"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-secondary"></span>
+                            <span className="colorinput-color bg-secondary"></span>
                           </label>
                         </div>
-                        <div class="col-auto">
-                          <label class="colorinput">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="danger"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-danger"></span>
+                            <span className="colorinput-color bg-danger"></span>
                           </label>
                         </div>
-                        <div class="col-auto">
-                          <label class="colorinput">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="warning"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-warning"></span>
+                            <span className="colorinput-color bg-warning"></span>
                           </label>
                         </div>
-                        <div class="col-auto">
-                          <label class="colorinput">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="info"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-info"></span>
+                            <span className="colorinput-color bg-info"></span>
                           </label>
                         </div>
-                        <div class="col-auto">
-                          <label class="colorinput">
+                        <div className="col-auto">
+                          <label className="colorinput">
                             <input
                               name="color"
                               type="checkbox"
                               value="success"
-                              class="colorinput-input"
+                              className="colorinput-input"
                             />
-                            <span class="colorinput-color bg-success"></span>
+                            <span className="colorinput-color bg-success"></span>
                           </label>
                         </div>
                       </div>
@@ -381,33 +391,33 @@ export class FormAdvancedform extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
+              <div className="col-12 col-md-6 col-lg-6">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Select</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Default</div>
-                    <div class="form-group">
+                  <div className="card-body">
+                    <div className="section-title mt-0">Default</div>
+                    <div className="form-group">
                       <label>Default Select</label>
-                      <select class="form-control">
+                      <select className="form-control">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
                       </select>
                     </div>
-                    <div class="section-title">Select 2</div>
-                    <div class="form-group">
+                    <div className="section-title">Select 2</div>
+                    <div className="form-group">
                       <label>Select2</label>
-                      <select class="form-control select2">
+                      <select className="form-control select2">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
                       </select>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Select2 Multiple</label>
-                      <select class="form-control select2" multiple="">
+                      <select className="form-control select2" multiple="">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
@@ -416,10 +426,10 @@ export class FormAdvancedform extends Component {
                         <option>Option 6</option>
                       </select>
                     </div>
-                    <div class="section-title">jQuery Selectric</div>
-                    <div class="form-group">
+                    <div className="section-title">jQuery Selectric</div>
+                    <div className="form-group">
                       <label>jQuery Selectric</label>
-                      <select class="form-control selectric">
+                      <select className="form-control selectric">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
@@ -428,9 +438,9 @@ export class FormAdvancedform extends Component {
                         <option>Option 6</option>
                       </select>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>jQuery Selectric Multiple</label>
-                      <select class="form-control selectric" multiple="">
+                      <select className="form-control selectric" multiple="">
                         <option>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
@@ -439,327 +449,336 @@ export class FormAdvancedform extends Component {
                         <option>Option 6</option>
                       </select>
                     </div>
-                    <div class="section-title">Select Group Button</div>
-                    <div class="form-group">
-                      <label class="form-label">Size</label>
-                      <div class="selectgroup w-100">
-                        <label class="selectgroup-item">
+                    <div className="section-title">Select Group Button</div>
+                    <div className="form-group">
+                      <label className="form-label">Size</label>
+                      <div className="selectgroup w-100">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="value"
                             value="50"
-                            class="selectgroup-input"
-                            checked=""
+                            className="selectgroup-input"
+                            defaultChecked=""
                           />
-                          <span class="selectgroup-button">S</span>
+                          <span className="selectgroup-button">S</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="value"
                             value="100"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">M</span>
+                          <span className="selectgroup-button">M</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="value"
                             value="150"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">L</span>
+                          <span className="selectgroup-button">L</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="value"
                             value="200"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">XL</span>
+                          <span className="selectgroup-button">XL</span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Icons input</label>
-                      <div class="selectgroup w-100">
-                        <label class="selectgroup-item">
+                    <div className="form-group">
+                      <label className="form-label">Icons input</label>
+                      <div className="selectgroup w-100">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="transportation"
                             value="2"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-mobile"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-mobile"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="transportation"
                             value="1"
-                            class="selectgroup-input"
-                            checked=""
+                            className="selectgroup-input"
+                            defaultChecked=""
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-tablet"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-tablet"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="transportation"
                             value="6"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-laptop"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-laptop"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="transportation"
                             value="6"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-times"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-times"></i>
                           </span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Icon input</label>
-                      <div class="selectgroup selectgroup-pills">
-                        <label class="selectgroup-item">
+                    <div className="form-group">
+                      <label className="form-label">Icon input</label>
+                      <div className="selectgroup selectgroup-pills">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="icon-input"
                             value="1"
-                            class="selectgroup-input"
-                            checked=""
+                            className="selectgroup-input"
+                            defaultChecked=""
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-sun"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-sun"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="icon-input"
                             value="2"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-moon"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-moon"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="icon-input"
                             value="3"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-cloud-rain"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-cloud-rain"></i>
                           </span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="radio"
                             name="icon-input"
                             value="4"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button selectgroup-button-icon">
-                            <i class="fas fa-cloud"></i>
+                          <span className="selectgroup-button selectgroup-button-icon">
+                            <i className="fas fa-cloud"></i>
                           </span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Your skills</label>
-                      <div class="selectgroup selectgroup-pills">
-                        <label class="selectgroup-item">
+                    <div className="form-group">
+                      <label className="form-label">Your skills</label>
+                      <div className="selectgroup selectgroup-pills">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="HTML"
-                            class="selectgroup-input"
-                            checked=""
+                            className="selectgroup-input"
+                            defaultChecked=""
                           />
-                          <span class="selectgroup-button">HTML</span>
+                          <span className="selectgroup-button">HTML</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="CSS"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">CSS</span>
+                          <span className="selectgroup-button">CSS</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="PHP"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">PHP</span>
+                          <span className="selectgroup-button">PHP</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="JavaScript"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">JavaScript</span>
+                          <span className="selectgroup-button">JavaScript</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="Ruby"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">Ruby</span>
+                          <span className="selectgroup-button">Ruby</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="Ruby"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">Ruby</span>
+                          <span className="selectgroup-button">Ruby</span>
                         </label>
-                        <label class="selectgroup-item">
+                        <label className="selectgroup-item">
                           <input
                             type="checkbox"
                             name="value"
                             value="C++"
-                            class="selectgroup-input"
+                            className="selectgroup-input"
                           />
-                          <span class="selectgroup-button">C++</span>
+                          <span className="selectgroup-button">C++</span>
                         </label>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Toggle Switches</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <div class="control-label">Toggle switches</div>
-                      <div class="custom-switches-stacked mt-2">
-                        <label class="custom-switch">
+                  <div className="card-body">
+                    <div className="form-group">
+                      <div className="control-label">Toggle switches</div>
+                      <div className="custom-switches-stacked mt-2">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="1"
-                            class="custom-switch-input"
-                            checked
+                            className="custom-switch-input"
+                            defaultChecked
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 1
                           </span>
                         </label>
-                        <label class="custom-switch">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="2"
-                            class="custom-switch-input"
+                            className="custom-switch-input"
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 2
                           </span>
                         </label>
-                        <label class="custom-switch">
+                        <label className="custom-switch">
                           <input
                             type="radio"
                             name="option"
                             value="3"
-                            class="custom-switch-input"
+                            className="custom-switch-input"
                           />
-                          <span class="custom-switch-indicator"></span>
-                          <span class="custom-switch-description">
+                          <span className="custom-switch-indicator"></span>
+                          <span className="custom-switch-description">
                             Option 3
                           </span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="control-label">Toggle switch single</div>
-                      <label class="custom-switch mt-2">
+                    <div className="form-group">
+                      <div className="control-label">Toggle switch single</div>
+                      <label className="custom-switch mt-2">
                         <input
                           type="checkbox"
                           name="custom-switch-checkbox"
-                          class="custom-switch-input"
+                          className="custom-switch-input"
                         />
-                        <span class="custom-switch-indicator"></span>
-                        <span class="custom-switch-description">
+                        <span className="custom-switch-indicator"></span>
+                        <span className="custom-switch-description">
                           I agree with terms and conditions
                         </span>
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>Date &amp; Time Picker</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label class="d-block">
+                  <div className="card-body">
+                    <div className="form-group">
+                      <label className="d-block">
                         Date Range Picker With Button
                       </label>
                       <a
                         href="javascript:;"
-                        class="btn btn-primary daterange-btn icon-left btn-icon"
+                        className="btn btn-primary daterange-btn icon-left btn-icon"
                       >
-                        <i class="fas fa-calendar"></i> Choose Date
+                        <i className="fas fa-calendar"></i> Choose Date
                       </a>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Date Picker</label>
-                      <input type="text" class="form-control datepicker" />
+                      <input type="text" className="form-control datepicker" />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Date Time Picker</label>
-                      <input type="text" class="form-control datetimepicker" />
+                      <input
+                        type="text"
+                        className="form-control datetimepicker"
+                      />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Date Range Picker</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fas fa-calendar"></i>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">
+                            <i className="fas fa-calendar"></i>
                           </div>
                         </div>
-                        <input type="text" class="form-control daterange-cus" />
+                        <input
+                          type="text"
+                          className="form-control daterange-cus"
+                        />
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label>Time Picker</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fas fa-clock"></i>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">
+                            <i className="fas fa-clock"></i>
                           </div>
                         </div>
-                        <input type="text" class="form-control timepicker" />
+                        <input
+                          type="text"
+                          className="form-control timepicker"
+                        />
                       </div>
                     </div>
                   </div>

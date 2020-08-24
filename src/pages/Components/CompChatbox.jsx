@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { Chatjs } from "../../js/Chat";
 
 export class CompChatbox extends Component {
+  componentDidMount() {
+    Chatjs();
+  }
   render() {
     return (
       <div class="main-content">

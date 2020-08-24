@@ -1,6 +1,21 @@
 import React, { Component } from "react";
+import $ from "jquery";
 
 export class CompTable extends Component {
+  componentDidMount() {
+    $("[data-width]").each(function() {
+      $(this).css({
+        width: $(this).data("width"),
+      });
+    });
+
+    // Height attribute
+    $("[data-height]").each(function() {
+      $(this).css({
+        height: $(this).data("height"),
+      });
+    });
+  }
   render() {
     return (
       <div class="main-content">

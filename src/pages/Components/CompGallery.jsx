@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { DatImage } from "../../js/DataImage";
 
 export class CompGallery extends Component {
+  componentDidMount() {
+    DatImage();
+  }
   render() {
     return (
       <div class="main-content">
@@ -36,7 +40,7 @@ export class CompGallery extends Component {
                         <div class="gallery">
                           <div
                             class="gallery-item"
-                            data-image="../assets/img/news/img01.jpg"
+                            data-image="../../assets/img/news/img01.jpg"
                             data-title="Image 1"
                           ></div>
                           <div

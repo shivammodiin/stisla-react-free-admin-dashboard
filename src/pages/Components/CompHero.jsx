@@ -1,6 +1,15 @@
 import React, { Component } from "react";
+import $ from "jquery";
 
 export class CompHero extends Component {
+  componentDidMount() {
+    $("[data-background]").each(function() {
+      var me = $(this);
+      me.css({
+        backgroundImage: "url(" + me.data("background") + ")",
+      });
+    });
+  }
   render() {
     return (
       <div class="main-content">
@@ -77,7 +86,7 @@ export class CompHero extends Component {
               <div class="col-12 mb-4">
                 <div
                   class="hero text-white hero-bg-image hero-bg-parallax"
-                  data-background="../assets/img/unsplash/andre-benz-1214056-unsplash.jpg"
+                  data-background="../../assets/img/unsplash/andre-benz-1214056-unsplash.jpg"
                 >
                   <div class="hero-inner">
                     <h2>Welcome, Ujang!</h2>
@@ -99,7 +108,7 @@ export class CompHero extends Component {
               <div class="col-12 mb-4">
                 <div
                   class="hero text-white hero-bg-image"
-                  data-background="../assets/img/unsplash/eberhard-grossgasteiger-1207565-unsplash.jpg"
+                  data-background="../../assets/img/unsplash/eberhard-grossgasteiger-1207565-unsplash.jpg"
                 >
                   <div class="hero-inner">
                     <h2>Welcome, Ujang!</h2>

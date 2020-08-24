@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import FormEditorJs from "../../js/FormEditor.js";
 
 export class FormEditor extends Component {
+  componentDidMount() {
+    FormEditorJs();
+  }
   render() {
     return (
       <div class="main-content">

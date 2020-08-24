@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import { StaticsGraph } from "../../js/StaticsGraph";
+import ProgressHeightWidth from "../../js/ProgressHeightWidth";
 
 export class CompStatics extends Component {
+  componentDidMount() {
+    StaticsGraph();
+    ProgressHeightWidth();
+  }
   render() {
     return (
       <div class="main-content">
