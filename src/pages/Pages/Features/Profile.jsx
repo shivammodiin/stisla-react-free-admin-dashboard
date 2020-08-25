@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import SummerNoteJs from "../../../js/summernote";
+import FormEditorJs from "../../../js/FormEditor";
 
 export class Profile extends Component {
+  componentDidMount() {
+    SummerNoteJs();
+    FormEditorJs();
+  }
   render() {
     return (
       <div class="main-content">

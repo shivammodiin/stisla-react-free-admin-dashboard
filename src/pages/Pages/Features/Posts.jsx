@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import CompDataTables from "../../../js/CompDataTable";
 
 export class Posts extends Component {
+  componentDidMount() {
+    CompDataTables();
+  }
   render() {
     return (
       <div class="main-content">

@@ -1,25 +1,13 @@
-import * as jQuery from "jquery";
-import $ from "jquery";
 import CodeMirror from "codemirror";
 import selectric from "selectric";
 import uploadPreview from "./jqueryUploadPreview";
+import SummerNoteJs from "./summernote";
+import $ from "jquery";
+import * as jQuery from "jquery";
+
 
 export default function FormEditorJs() {
-    if (jQuery().summernote) {
-        $(".summernote").summernote({
-            dialogsInBody: true,
-            minHeight: 250,
-        });
-        $(".summernote-simple").summernote({
-            dialogsInBody: true,
-            minHeight: 150,
-            toolbar: [
-                ["style", ["bold", "italic", "underline", "clear"]],
-                ["font", ["strikethrough"]],
-                ["para", ["paragraph"]],
-            ],
-        });
-    }
+    SummerNoteJs()
 
     $(".codeeditor").each(function () {
         const editor = CodeMirror.fromTextArea(this, {

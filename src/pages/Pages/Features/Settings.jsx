@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Settings() {
   return (
@@ -32,9 +33,9 @@ export default function Settings() {
                     General settings such as, site title, site description,
                     address and so on.
                   </p>
-                  <a href="features-setting-detail.html" class="card-cta">
+                  <Link to="/feature/setting-detail" class="card-cta">
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -49,9 +50,9 @@ export default function Settings() {
                     Search engine optimization settings, such as meta tags and
                     social media.
                   </p>
-                  <a href="features-setting-detail.html" class="card-cta">
+                  <Link to="/feature/setting-detail" class="card-cta">
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -66,9 +67,9 @@ export default function Settings() {
                     Email SMTP settings, notifications and others related to
                     email.
                   </p>
-                  <a href="features-setting-detail.html" class="card-cta">
+                  <Link to="/feature/setting-detail" class="card-cta">
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,9 +83,9 @@ export default function Settings() {
                   <p>
                     PHP version settings, time zones and other environments.
                   </p>
-                  <a href="features-setting-detail.html" class="card-cta">
+                  <Link to="/feature/setting-detail" class="card-cta">
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -99,9 +100,9 @@ export default function Settings() {
                     Security settings such as firewalls, server accounts and
                     others.
                   </p>
-                  <a href="features-setting-detail.html" class="card-cta">
+                  <Link to="/feature/setting-detail" class="card-cta">
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -116,12 +117,12 @@ export default function Settings() {
                     Settings about automation such as cron job, backup
                     automation and so on.
                   </p>
-                  <a
-                    href="features-setting-detail.html"
+                  <Link
+                    to="/feature/setting-detail"
                     class="card-cta text-primary"
                   >
                     Change Setting <i class="fas fa-chevron-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
