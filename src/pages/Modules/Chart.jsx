@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-
-export class Chart extends Component {
+import ModuleChart from "../../js/ModuleChart";
+export class ChartModule extends Component {
+  componentDidMount() {
+    ModuleChart();
+  }
   render() {
     return (
       <div class="main-content">
@@ -76,4 +79,4 @@ export class Chart extends Component {
   }
 }
 
-export default Chart;
+export default ChartModule;

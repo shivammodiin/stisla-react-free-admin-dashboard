@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import SweetAlerMessage from "../../js/sweetalert";
 
 export class SweetAlert extends Component {
+  componentDidMount() {
+    SweetAlerMessage();
+  }
   render() {
     return (
       <div class="main-content">

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import ProgressHeightWidth from "../../js/ProgressHeightWidth.js";
 
 export class Marker extends Component {
+  componentDidMount() {
+    ProgressHeightWidth();
+  }
   render() {
     return (
       <div class="main-content">

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import ToastrMessage from "../../js/toastrMessage";
 
 export class Toastr extends Component {
+  componentDidMount() {
+    ToastrMessage();
+  }
   render() {
     return (
       <div class="main-content">

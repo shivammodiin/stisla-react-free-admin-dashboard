@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import VectorMapsJs from "../../js/VectorMapJs";
 
 export class VectorMap extends Component {
+  componentDidMount() {
+    VectorMapsJs();
+  }
   render() {
     return (
       <div class="main-content">
@@ -67,7 +71,7 @@ export class VectorMap extends Component {
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Indonesian Map</h4>
+                    <h4>France Map</h4>
                   </div>
                   <div class="card-body">
                     <div id="visitorMap3"></div>

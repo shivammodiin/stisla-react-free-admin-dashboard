@@ -297,8 +297,8 @@ export const Data = {
                     url: '/module/sparkline'
                 },
                 {
-                    name: 'Sweet Alert 2',
-                    url: '/module/sweet-alert-2'
+                    name: 'Sweet Alert',
+                    url: '/module/sweetalert'
                 },
                 {
                     name: 'Toastr',

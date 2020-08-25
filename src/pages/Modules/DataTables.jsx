@@ -1,6 +1,11 @@
 import React, { Component } from "react";
-
+import ProgressHeightWidth from "../../js/ProgressHeightWidth";
+import ModuleDataTable from "../../js/ModuleDataTable";
 export class DataTables extends Component {
+  componentDidMount() {
+    ProgressHeightWidth();
+    ModuleDataTable();
+  }
   render() {
     return (
       <div class="main-content">

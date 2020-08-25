@@ -1,20 +1,11 @@
 import React, { Component } from "react";
-import $ from "jquery";
+import CompDataTable from "../../js/CompDataTable";
+import ProgressHeightWidth from "../../js/ProgressHeightWidth";
 
 export class CompTable extends Component {
   componentDidMount() {
-    $("[data-width]").each(function() {
-      $(this).css({
-        width: $(this).data("width"),
-      });
-    });
-
-    // Height attribute
-    $("[data-height]").each(function() {
-      $(this).css({
-        height: $(this).data("height"),
-      });
-    });
+    ProgressHeightWidth();
+    CompDataTable();
   }
   render() {
     return (

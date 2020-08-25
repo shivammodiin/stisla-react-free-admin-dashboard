@@ -1,6 +1,17 @@
 import React, { Component } from "react";
+import $ from "jquery";
 
 export class OwlCarousel extends Component {
+  componentDidMount() {
+    $("#slider1,#slider2").owlCarousel({
+      items: 1,
+      nav: true,
+      navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>',
+      ],
+    });
+  }
   render() {
     return (
       <div class="main-content">
