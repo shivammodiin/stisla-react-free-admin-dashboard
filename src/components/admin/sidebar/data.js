@@ -5,13 +5,13 @@ export const Data = {
         },
         {
             dropdown: true,
-            active: true,
+            // active: true,
             name: 'Dashboard',
             icon: 'fas fa-fire',
             children: [{
                     name: 'Ecommerce Dashboard',
                     url: '/',
-                    active: true
+                    // active: true
                 },
                 {
                     name: 'General Dashboard',
@@ -333,11 +333,7 @@ export const Data = {
                     url: '/auth/login',
                     active: false
                 },
-                {
-                    name: 'Login 2',
-                    url: '/auth/login-2',
-                    active: false
-                },
+
                 {
                     name: 'Register',
                     url: '/auth/register',
@@ -431,7 +427,7 @@ export const Data = {
                 },
                 {
                     name: 'Invoice',
-                    url: '/utilities/Invoice',
+                    url: '/utilitie/Invoice',
                     active: false
                 },
                 {

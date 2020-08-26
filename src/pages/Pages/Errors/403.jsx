@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Error403 extends Component {
   render() {
@@ -33,7 +34,7 @@ export class Error403 extends Component {
                     </div>
                   </form>
                   <div class="mt-3">
-                    <a href="index.html">Back to Home</a>
+                    <Link to="/">Go back</Link>
                   </div>
                 </div>
               </div>
