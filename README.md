@@ -37,6 +37,9 @@
     <img src="./src/example/stislas1.PNG" alt="Stisla Image">
   </a>
 </p>
+
+<br/>
+ <br/>
  
 <p align="center">
   <a href="https://react-free-admin-dashboard.netlify.app/">
@@ -44,12 +47,18 @@
   </a>
 </p>
 <p>
-
+  
+<br/>
+ <br/>
+  
  <p align="center">
   <a href="https://react-free-admin-dashboard.netlify.app/">
     <img src="./src/example/stislas3.PNG" alt="Stisla Image">
   </a>
 </p>
+
+<br/>
+ <br/>
 
 <p>
 
