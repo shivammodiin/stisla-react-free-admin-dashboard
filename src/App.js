@@ -220,12 +220,8 @@ function App() {
           <Route path="/utilities/subscribe" component={Subscribe} />{" "}
           <Route path="/utilities/contact" component={Contact} />{" "}
         </Switch>{" "}
-<<<<<<< HEAD
         <Footer />
       </>{" "}
-=======
-      </>
->>>>>>> a125235dbb89c9c0f62c0b9abdee97ed9e8de078
     </div>
   );
 }
