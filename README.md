@@ -123,7 +123,11 @@ Once your server has started, go to this url `http://localhost:3000/` and you wi
 
 ## Contributing
 
-Want to help stisla-react-free-admin-dashboard get better? Let's contribute and send pull request
+If you Want to help stisla-react-free-admin-dashboard to get better? Let's contribute and send pull request 
+
+  **Issue**:
+   => In auth section after navigate to Login or Register Page or any Page where Sidebar is not avalible and going back to HomePage  then Sidebar is not Working .
+
 
 ## License
 
