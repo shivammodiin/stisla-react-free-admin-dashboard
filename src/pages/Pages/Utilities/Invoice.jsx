@@ -180,7 +180,7 @@ export class Invoice extends Component {
                   </button>
                 </div>
                 <button class="btn btn-warning btn-icon icon-left">
-                  <i class="fas fa-print"></i> Print
+                  <i class="fas fa-print"></i>Print Invoice
                 </button>
               </div>
             </div>
