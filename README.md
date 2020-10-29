@@ -126,7 +126,7 @@ Once your server has started, go to this url `http://localhost:3000/` and you wi
 If you Want to help stisla-react-free-admin-dashboard to get better? Let's contribute and send pull request 
 
   **Issue**:
-   => In auth section after navigate to Login or Register Page or any Page where Sidebar is not avalible and going back to HomePage  then Sidebar is not Working .
+   => In auth section after navigate to Login or Register Page or any Page where Sidebar is not avalible and going back to HomePage  then navigation threw is not Working . On page refresh it should show Loading Indicator until data not retrieved.
 
 
 ## License
