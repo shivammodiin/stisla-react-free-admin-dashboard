@@ -1,7 +1,7 @@
 # Free React Admin Dashboard ⚡️ [![GitHub](https://img.shields.io/github/license/shivammodi456/stisla-react-free-admin-dashboard?color=blue)](https://github.com/shivammodi456/stisla-react-free-admin-dashboard/blob/master/License.md)
 
 <p align="center">
-  <a href="https://react-free-admin-dashboard.netlify.app/">
+  <a href="https://react-free-admin-dashboard-template.netlify.app/">
     <img src="https://avatars2.githubusercontent.com/u/45754626?s=75&v=4" alt="Stisla logo" width="75" height="75">
   </a>
 </p>
@@ -27,13 +27,13 @@
 <br>
 
 <p align="center">To view a live example:-   
-  <a href="https://react-free-admin-dashboard.netlify.app/" target="_new"><b>Live url</b> </a>
+  <a href="https://react-free-admin-dashboard-template.netlify.app/" target="_new"><b>Live url</b> </a>
 </p>
 
 <br>
 
 <p align="center">
-  <a href="https://react-free-admin-dashboard.netlify.app/">
+  <a href="https://react-free-admin-dashboard-template.netlify.app/">
     <img src="./src/example/stislas1.PNG" alt="Stisla Image">
   </a>
 </p>
@@ -42,7 +42,7 @@
  <br/>
  
 <p align="center">
-  <a href="https://react-free-admin-dashboard.netlify.app/">
+  <a href="https://react-free-admin-dashboard-template.netlify.app/">
     <img src="./src/example/stislas2.PNG" alt="Stisla Image">
   </a>
 </p>
@@ -52,7 +52,7 @@
  <br/>
   
  <p align="center">
-  <a href="https://react-free-admin-dashboard.netlify.app/">
+  <a href="https://react-free-admin-dashboard-template.netlify.app/">
     <img src="./src/example/stislas3.PNG" alt="Stisla Image">
   </a>
 </p>
