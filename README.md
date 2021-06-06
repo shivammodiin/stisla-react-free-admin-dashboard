@@ -16,9 +16,9 @@
 <span align="center">
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/shivammodi456/stisla-react-free-admin-dashboard)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg)
-[![License](https://img.shields.io/github/license/stisla/stisla.svg)](LICENSE)
-![npm version](https://badge.fury.io/js/yarn.svg)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/shivammodi456/stisla-react-free-admin-dashboard)
+[![License](https://img.shields.io/github/license/shivammodi456/stisla-react-free-admin-dashboard)](LICENSE)
+
 
 </span>
 
