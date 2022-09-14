@@ -1,4 +1,4 @@
-# Free React Admin Dashboard ⚡️ [![GitHub](https://img.shields.io/github/license/shivammodi456/stisla-react-free-admin-dashboard?color=blue)](https://github.com/shivammodi456/stisla-react-free-admin-dashboard/blob/master/License.md)
+# Free React Admin Dashboard ⚡️ [![GitHub](https://img.shields.io/github/license/shivammodiin/stisla-react-free-admin-dashboard?color=blue)](https://github.com/shivammodiin/stisla-react-free-admin-dashboard/blob/master/License.md)
 
 <p align="center">
   <a href="https://react-free-admin-dashboard-template.netlify.app/">
@@ -15,9 +15,9 @@
 
 <span align="center">
 
-![GitHub last commit](https://img.shields.io/github/last-commit/shivammodi456/stisla-react-free-admin-dashboard)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/shivammodi456/stisla-react-free-admin-dashboard)
-[![License](https://img.shields.io/github/license/shivammodi456/stisla-react-free-admin-dashboard)](LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/shivammodiin/stisla-react-free-admin-dashboard)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/shivammodiin/stisla-react-free-admin-dashboard)
+[![License](https://img.shields.io/github/license/shivammodiin/stisla-react-free-admin-dashboard)](LICENSE)
 
 
 </span>
@@ -74,7 +74,7 @@ From your command line, first clone stisla-react-free-admin-dashboard:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/shivammodi456/stisla-react-free-admin-dashboard
+$ git clone https://github.com/shivammodiin/stisla-react-free-admin-dashboard
 
 # Go into the repository
 $ cd stisla-react-free-admin-dashboard
@@ -135,6 +135,6 @@ stisla-react-free-admin-dashboard is under the [MIT License](LICENSE)
 
 ## Netlify Quick Deploy
 
-1. Click the [Deploy to Netlify Button](https://app.netlify.com/start/deploy?repository=https://github.com/shivammodi456/stisla-react-free-admin-dashboard)
+1. Click the [Deploy to Netlify Button](https://app.netlify.com/start/deploy?repository=https://github.com/shivammodiin/stisla-react-free-admin-dashboard)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shivammodi456/stisla-react-free-admin-dashboard)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shivammodiin/stisla-react-free-admin-dashboard)
